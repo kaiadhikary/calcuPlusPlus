@@ -39,13 +39,64 @@ int main()
     }
     else{
         if (x==5)
-        {
-            cout<<"Coming Soon...";
-        }
+        {}
         else{
         cout<<"You have entered the wrong number, Please check your number.";
             }
         }
 
+        if (x==5)
+        {
+            cout<<"\nPage no. 2\nEnter 6 to get the multiplication table of your given number.\nClick 7 to get the square of your given number.\nClick 8 to get the cube of your given number.\nClick 9 to check if the given number is even number or odd number.\nEnter 10 to view the next page.\nEnter your number: ";
+            cin>>x;
+
+            if (x==6)
+            {
+                cout<<"Enter the number of which you want the table: ";
+                cin>>y;
+                for (int i = 1; i <= 10; i++)
+                {
+                    cout<<y<<" x "<<i<<" = "<<y*i<<endl;
+                }
+            }
+            else{
+                if (x==7)
+                {
+                    cout<<"Enter the number of which you want the square of: ";
+                    cin>>y;
+                    cout<<"The Square of the given number is: "<<y*y<<".";
+                }
+                else{
+                    if (x==8)
+                    {
+                        cout<<"Enter the number of which you want the square of: ";
+                        cin>>y;
+                        cout<<"The Square of the given number is: "<<y*y*y<<".";
+                    }
+                    else{
+                        if (x==9)
+                        {
+                            int i;
+                            cout<<"Enter the number: ";
+                            cin>>y;
+                            if (i%2==0)
+                            {
+                                cout<<"It is a even number.";
+                            }
+                            else{
+                                cout<<"It is a odd number.";
+                                }
+                        }
+                        else{
+                            if (x==10)
+                            {}
+                            else{
+                                cout<<"You have entered the wrong number, Please check your number.";
+                                }
+                            } 
+                        }   
+                    }
+                }   
+        }
     return 0;
 }
