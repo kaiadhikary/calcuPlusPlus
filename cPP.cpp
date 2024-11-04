@@ -14,6 +14,7 @@ int main()
         cin>>y;
         cout<<"Enter your second number: ";
         cin>>z;
+
         if (x==1)
         {
             cout<<"\nThe addition of your given two number is: "<<y+z<<".";
@@ -98,5 +99,11 @@ int main()
                     }
                 }   
         }
+        
+        if (x==10)
+        {
+            cout<<"coming soon...";
+        }
+        
     return 0;
 }
